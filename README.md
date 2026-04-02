@@ -16,7 +16,8 @@ Pinterest board: [link](https://pin.it/6HHlOmha6)
 ### Activity 2
 
 Break-down:
-![image](https://github.com/user-attachments/assets/4674affa-ab59-4142-87ef-1e89ec9d95f0)
+![gdim33 pitch breakdown](https://github.com/user-attachments/assets/e634c16f-6bc1-411a-ba97-e3b4581715ed)
+
 
 
 ## W2
