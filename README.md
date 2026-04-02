@@ -16,6 +16,8 @@ Pinterest board: [link](https://pin.it/6HHlOmha6)
 ### Activity 2
 
 Break-down:
+![image](https://github.com/user-attachments/assets/4674affa-ab59-4142-87ef-1e89ec9d95f0)
+
 
 ## W2
 Write your W2 Devlog here.
