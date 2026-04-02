@@ -1,15 +1,21 @@
 # GDIM 33 In-Class Activities
 ## W1
 ### Activity 1
-Put your inspo board link here. Do NOT leave a bare URL. REMOVE ALL INSTRUCTIONAL TEXT.
 
-1. Put your activity 1 answers here.
-2. Please keep the proper list format.
+#### Question 1
+Pinterest board: [link](https://pin.it/6HHlOmha6)
+
+#### Question 2
+1. Non-game aesthetic: buildings, cyberpunk, color contrast (dark vs vibrant), stairs, walls, atmospheric; game mechanics: exploration, escape room, unlocking doors, finding a way, slightly unsettling
+
+2. Talked to my table mate Jeremy and found out that we both like anime-style art and rhythm games.
+
+3. Talked to LA Elijah: a discussion on the gameplay and environmental storytelling of the game Death Stranding.
 
 
 ### Activity 2
-Put your activity 2 image here. REMOVE THIS INSTRUCTIONAL TEXT.
 
+Break-down:
 
 ## W2
 Write your W2 Devlog here.
