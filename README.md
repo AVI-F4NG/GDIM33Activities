@@ -58,3 +58,43 @@ There is no limit to the total number of nodes that could be created, but each d
 #### Question 3
 
 It rebuilds the visual scripting node database so the updated script members become available in graphs. If added or changed variables, methods, classes, or properties in C# scripts, the graph may not immediately show the new members. 
+
+## W5
+
+### Activity 1
+
+1. Build the first visible progression gate: collect Key Card 1 and unlock the first door
+
+(1) Create the KeyCard1 object with a trigger collider and place it in Room 1. When the player enters its range, print Near KeyCard1 with a Debug Log to confirm detection is working.
+
+(2) Add interaction logic so pressing E while near the key card deactivates the key card object. Test by running the game and confirming the key card disappears only when E is pressed.
+
+(3) Create the first locked door between Room 1 and Room 2. Make it block the player before the key card is collected. Test by running the game and confirming the player cannot walk through it at first.
+
+(4) Add unlock logic so pressing E at the door after collecting the key card deactivates or opens the door. Test by running the game and confirming the player can now enter Room 2.
+
+2. Add the next progression layer: find the USB and activate the computer event
+
+(1) Create the Room 1 computer as an interactable object that displays the first clue. Test by running the game and confirming the clue appears when the player presses E near the computer.
+
+(2) Create the concealed box in Room 2 and place the USB inside it. Test by running the game and confirming the USB can be collected and disappears after pickup.
+
+(3) Add logic so the computer behaves differently after the USB is collected. When the player returns and interacts again, print USB detected at computer with a Debug Log. Test by checking that this only happens after collecting the USB.
+
+(4) Add the virus prompt and make choosing Yes activate the next puzzle state. Test by running the game and confirming that the prompt appears and only the Yes choice advances progression.
+
+3. Build the full puzzle chain: monitor clue, passcode door, maintenance puzzle, and final exit
+
+(1) Create the 9-monitor flash sequence in Room 1 and trigger it after the virus prompt. Test by running the game and confirming the monitors visibly flash in a fixed pattern.
+
+(2) Create the passcode door in Room 2 and make it open only when the correct code is entered. Test by entering a wrong code first, then the correct code, and confirming only the correct one unlocks the door.
+
+(3) Create the directional floor puzzle in Room 3. Test by running the game and confirming the player is reset or stopped when taking the wrong path, and can reach the end on the correct path.
+
+(4) Place KeyCard2 at the end of the floor puzzle and connect it to the final stairway door in Room 2. Test by running the full game and confirming the player can only escape after completing the puzzle and collecting KeyCard2.
+
+### Activity 2
+
+Added interactable UI to the computer in Room 1, so that the player can interact with the screen with artifacts on it and see a popup screen with the contents of an old computer's desktop. Also added the 1st key card clue ("The key card is in the flower pot").
+
+Added a script that gives DontDestroyOnLoad() to the player GameObject, so that it persists across different scenes.
