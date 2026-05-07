@@ -98,3 +98,38 @@ It rebuilds the visual scripting node database so the updated script members bec
 Added interactable UI to the computer in Room 1, so that the player can interact with the screen with artifacts on it and see a popup screen with the contents of an old computer's desktop. Also added the 1st key card clue ("The key card is in the flower pot").
 
 Added a script that gives DontDestroyOnLoad() to the player GameObject, so that it persists across different scenes.
+
+## W6
+
+### Activity 1
+1. what is NEW in your build since your Milestone 1 submission
+
+- A second room for exploration
+- The computer screen to show the first clue and prepare for the complicating factor
+
+2. a link to your Itch page
+Link: [itch](https://lum3ni.itch.io/gdim-33-ms2)
+
+3. your playtesting goal(s)
+- To find if there are any unresolved bugs within the game
+- To see if the game is intuitive enough to be played through without hints
+
+4. Playtest notes: one of the playtests found out that the collider setup after the first door is unlocked is incorrect, resulting in the player to teleport to the second room no matter what collider they touch. The cause is found within the player graph, which didn't compare the collision object's tag and instead triggers the scene change when the player's collider collides with any collider.
+
+### Activity 2
+
+1. Why does the Multiply setting of the Blend node make the resulting color darker and less saturated than the input colors?
+
+Because the multiply option multiplies the values given, so a vector A = (R1, G1, B1) Blended with a vector B = (R2, G2, B2) with the Multiply option will result in a vector C = (R1*R2, G1*G2, B1*B2), which results in the three values in the vectors becoming higher because of the multiply
+
+2. If we use Multiply to combine Alpha values, will the resulting value be more or less translucent than either of the original values, and why?
+
+More translucent, since the values are all between 0.0 and 1.0, which results in the values becoming smaller and smaller as they multiply with each other, and the smaller the alpha values is, the more translucent the material gets.
+
+3. When we created the SampleTexture2D node, Unity auto-created the UV0 Node for us to get the UV coordinates for sampling the texture. Where does the shader get these UV values from?
+
+The UV value comes from the data stored in the vertex of the 3D mesh
+
+4. You just learned that you can manipulate colors with math. Does that sound interesting or exciting to you?
+
+Yes. Because this way I can better control colors with mathematical operations and manage materials in a more efficient way.
