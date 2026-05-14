@@ -140,6 +140,6 @@ Yes. Because this way I can better control colors with mathematical operations a
 2. Because they are stored on individual vertices rather than on pixels, and the GPU linearly interpolates color across the face between these points.
 3. Color resolution is limited by mesh density (vertex count), while textures are independent of geometry, allowing more detailed texture by pixels.
 4. It looks good
-5. The tangent value (represents the direction that points along the horizontal texture) axis of the surface at the position of the vertex)
+5. The tangent value (represents the direction that points along the horizontal texture) axis of the surface at the position of the vertex. Debug shaders allow us to visualize the tangent space, detecting errors from incorrect mesh UVs.
 6. Because the light direction vector is pointing towards our shiba, but the shiba’s normal vectors are pointing away from itself. When we try to compare the angle between these vectors, if the polygon on the shiba is facing the light, we’re going to get a negative value, and therefore this area of the shiba will be dark.
 7. The additive blend mode sums the color values of the source with the destination, creating a brightened effect where lighter colors appear and black remains transparent.
