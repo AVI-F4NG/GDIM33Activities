@@ -143,3 +143,25 @@ Yes. Because this way I can better control colors with mathematical operations a
 5. The tangent value (represents the direction that points along the horizontal texture) axis of the surface at the position of the vertex. Debug shaders allow us to visualize the tangent space, detecting errors from incorrect mesh UVs.
 6. Because the light direction vector is pointing towards our shiba, but the shiba’s normal vectors are pointing away from itself. When we try to compare the angle between these vectors, if the polygon on the shiba is facing the light, we’re going to get a negative value, and therefore this area of the shiba will be dark.
 7. The additive blend mode sums the color values of the source with the destination, creating a brightened effect where lighter colors appear and black remains transparent.
+
+## W8
+
+### Activity 1
+
+1. Added a maze prototype for the 3rd room
+2. Link: [Itch](https://lum3ni.itch.io/gdim-33-ms3)
+3. Figure out how intuitive my game is and whether there's any bugs present with the new area
+4. Playtest notes:
+
+### Playtesting Notes
+1. The player is moving too slow
+2. The different door controls are confusing (make all doors enter-able upon collision instead of requiring the E key)
+3. The password entry screen should disappear automatically after a successful entry
+4. A bug with the maze/lounge scene change: the player teleports to outside the map if the player is on a location in room3 that correponds to a point that is outside the wall in room2, causing the player to be permanently stuck and can only get unstuck by restarting the game.
+
+### Acticity 2 (2B)
+
+1. How is the Fraction node used to animate the shine effect?
+2. Why does the Shine texture for the ShinySprite shader need to be BLACK by default? Consider that we're using the Add Node to combine it with the original texture...
+3. Why isn't the building texture we used in the ShaderGraph applied to all of the Sprites that use the ShinySprite shader?
+4. Why do we multiply fraction(time * ShineSpeed) with the speed variable inside the fraction instead of outside- as in fraction(time)*speed? If you're not sure, try modifying your graph to multiply the Fraction node with ShineSpeed instead of multiplying Time with ShineSpeed, and see what happens.
