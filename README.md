@@ -151,7 +151,6 @@ Yes. Because this way I can better control colors with mathematical operations a
 1. Added a maze prototype for the 3rd room
 2. Link: [Itch](https://lum3ni.itch.io/gdim-33-ms3)
 3. Figure out how intuitive my game is and whether there's any bugs present with the new area
-4. Playtest notes:
 
 ### Playtesting Notes
 1. The player is moving too slow
