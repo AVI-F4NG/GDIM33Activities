@@ -164,3 +164,25 @@ Yes. Because this way I can better control colors with mathematical operations a
 2. Because the shader uses an Add node: Main Texture + Shine Texture. In the add math within shaders, black is represented by 0 (therefore it's transparent). So, original sprite + black = original sprite. That means the black parts of the shine texture do not visibly affect the sprite. Since the poof texture has a black background with a soft white circle, the black area stays invisible while the white blurred circle becomes the glowing shine. If the Shine texture were white or bright by default, then the Add node would brighten the whole sprite all the time, not just the shine area.
 3. Because the building texture is only a default value for MainTex inside the Shader Graph. For sprites, the material's MainTex is automatically filled by the actual sprite assigned in the SpriteRenderer, as long as the property is named "MainTex". So when the material is used on a real SpriteRenderer, Unity replaces MainTex with that object’s own sprite texture.
 4. Because Fraction(Time * ShineSpeed) changes the speed of the loop. Fraction(Time) * ShineSpeed changes the range of the UV displacement after the loop, resulting the Fraction(Time) value taken by the UV of the shine texture to be limited to 0.5 if the decimal value is set to 0.5, resulting in the UV sliding only halfway across the texture before restarting, cutting off the smooth fading effect of the other half of the texture.
+
+## W9
+
+### Activity 1
+
+Game: Minecraft
+
+1. Nausea effect: a post-processing effect that distorts the entire screen view of the player. Instead of applying the rendering effect on every object in the scene, it is more doable if the developers just applied a post-processing effect. The trigger condition is whenever the player gets affected by the "nausea" effect in-game.
+2. Mobs get red after getting hit: probably a color change applied to the object's material, triggered every time damage is detected on the mob, and lasts for about half a second before automatically cancelling itself.
+
+### Activity 2
+I have finished the entire shader graph last weekend, so I asked someone else to playtest my game and found some room for improvement, and focused on fixing those issues instead.
+
+Link to [commit](https://github.com/AVI-F4NG/VerticalSlice33/commit/823b1758c1086a918405531b17fbd7d3aeec76c8)
+
+Updates:
+- Tuned down the player's movement speed a little bit so the player isn't fast enough to break into nearby colliders if a movement key is pressed continuously during scene switches.
+- Added "delete" and "quit" buttons to the password entry screen as per a playtester's advice
+- Added a prompt to the "strange picture" whenever the player is close to it, so the player will know that it's interactable.
+
+This is a screenshot of the shader graph that I made:
+<img width="3814" height="1541" alt="Screenshot 2026-05-24 182814" src="https://github.com/user-attachments/assets/7308d523-34c6-4dcb-a5a1-5abd228c54d7" />
