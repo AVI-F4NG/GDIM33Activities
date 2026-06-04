@@ -186,3 +186,31 @@ Updates:
 
 This is a screenshot of the shader graph that I made:
 <img width="3814" height="1541" alt="Screenshot 2026-05-24 182814" src="https://github.com/user-attachments/assets/7308d523-34c6-4dcb-a5a1-5abd228c54d7" />
+
+## W10
+
+### Activity 1
+
+- Link: [itch](https://lum3ni.itch.io/gdim33-final)
+- Changes: added a quit ("home") button for the computer screen in case the player forgot to click ESC to quit
+- Playtest goals: find edge-case bugs (suppose if the player doesnt play as intended)
+
+Playtest notes: no bugs found, cross-scene collider bug fixed
+
+### Activity 2
+
+Must playtest on the intended platform, playtesting in game engine is not enought - players will only be able to play there.
+
+#### Breakdown process:
+
+Know the core mechanics - break the game into specific systems and mechanics - for each sub-system or mechanic, break it down into smaller doable parts like specific classes, methods, and relationships between classes just like in GDIM 32 when we broke down the minigames.
+
+#### Effects on scope:
+
+Breaking the game down to smaller, clearer parts usually makes me realize that the scope of the game is larger than what I expected. After breaking the systems and classes down, there are much more emergent sub-functions or helper methods that could appear during this step of understanding (and not at the top-level game design stage)
+
+### Activity 3
+
+Added a prompt when the player picks up the first key card to make the game more responsive.
+
+Link: [commit](https://github.com/AVI-F4NG/VerticalSlice33/commit/3e6adc18f4a0d3502e981970b35dedfc2145738a)
